@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --body-color: rgb(250, 250, 250);
+    --color-white: rgb(255, 255, 255);
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(30, 159, 171);
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+    --second-color: rgb(0, 201, 255);
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-color);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+
+    width: 100%;
+
+}
+
+
+.nav-content {
+
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 1rem;
+    gap: 2rem;
+}
+
+.logo a {
+
+    color: var(--text-color-third);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.logo span {
+
+    color: rgb(80 80 80);
+    font-size: 2.5rem;
+}
+
+
+nav .checkbox {
+
+    display: none;
+}
+
+nav .checkbox i {
+
+    font-size: 2rem;
+    color: var(--text-color-third)
+}
+
+nav input {
+
+    display: none;
+}
+
+
+.navlinks {
+
+
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.navlinks li a {
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    
+}
+
+.navlinks li a:hover {
+
+    color: var(--third-color);
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+
+
+.btncv {
+
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btncv a {
+
+    color: rgb(42, 42, 42);
+
+}
+
+.btncv>i {
+
+    margin-left: 10px;
+}
+
+i {
+
+    font-size: 16px;
+}
+
+.btncv i {
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btncv:hover{
+
+    background-color: var(--third-color);
+
+}
+
+.btncv a:hover{
+
+    color: rgb(44, 44, 44);
+}
+
+.btncv i:hover{
+
+    color: white;
+}
+
+
+.hero
+{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    padding: 1rem 1rem;
+    gap: 2rem;
+    max-width: 1200px;
+    height: 68vh;
+}
+
+
+.hero-text{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.sml-name span{
+
+    background: var(--third-color);
+    color: var(--color-white);
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+
+.featured-name {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-block: 6px;
+}
+
+.typedText{
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+
+.para{
+
+    line-height: 25px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+    margin-bottom: 34px;
+}
+
+
+.hero-btn{
+
+    display: flex;
+    gap: 1rem;
+}
+
+.hire{
+
+    font-weight: 500;
+    padding: 12px 20px;
+    background: var(--first-color);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+    border: 2px solid transparent;
+
+}
+
+.hire:hover{
+
+    
+    background: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+
+}
+
+.social-icons{
+
+    display: flex;
+    margin-top: 34px;
+    gap: 2rem;
+
+}
+
+.icon{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+
+.hero-image{
+
+    display: grid;
+    place-items: center;
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.hero-image img{
+
+    width: 380px;
+    height: 380px;
+    animation: imgFloat 7s ease-in-out infinite;
+    border-radius: 55% 45% 55% 45%;
+}
+
+
+
+.btncv2 {
+
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btncv2 a {
+
+    color: rgb(42, 42, 42);
+
+}
+
+.btncv2>i {
+
+    margin-left: 10px;
+}
+
+i {
+
+    font-size: 16px;
+}
+
+.btncv2 i {
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btncv2:hover{
+
+    background-color: var(--third-color);
+
+}
+
+.btncv2 a:hover{
+
+    color: rgb(44, 44, 44);
+}
+
+.btncv2 i:hover{
+
+    color: white;
+}
+
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
